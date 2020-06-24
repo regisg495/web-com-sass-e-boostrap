@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ViaMundo - Inscrição</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- Modal  Login-->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Fazer Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="login" class="col-form-label">Login:</label>
+                        <input type="text" class="form-control" id="login" placeholder="Seu login"
+                               aria-describedby="loginAjuda">
+                        <small id="loginAjuda" class="form-text text-muted">Nós nunca guardamos seus dados para uso
+                            pessoal.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha" class="col-form-label">Senha:</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Sua senha"
+                               aria-labelledby="esqueceuSenha">
+                        <small id="esqueceuSenha" class="form-text text-muted">
+                            Esqueceu sua senha? Clique <a href="#">aqui</a>
+                        </small>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" href="#" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top box-shadow">
+    <a href="index.html"><img src="img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="planos.html">Planos</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" data-toggle="modal" href="#" data-target="#modalLogin">Login</a>
+            </li>
+
+            <li class="nav-item mx-1 mr-3">
+                <a class="btn btn-outline-primary ml-md-1" href="inscrever.html">Inscrever-se</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="container p-md-5 mt-3 escolha">
+    <span class="h6 font-weight-bold text-uppercase d-block text-center pb-1">Obtenha Benefícios Incríveis</span>
+    <h2 class="display-4 text-primary text-center mb-5 text-uppercase">Inscreva-se</h2>
+    <div class="row">
+        <form class="col-lg-6">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Seu sobrenome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="XXX.XXX.XXX-XX">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="seuemail@email.com">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="password" placeholder="Sua senha">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="estado">Estado</label>
+                    <select class="form-control" id="estado">
+                        <option selected>Escolha o Estado</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>São Paulo</option>
+                        <option>Minas Gerais</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Alagoas</option>
+                        <option>Santa Catarina</option>
+                        <option>Pernambuco</option>
+                        <option>Ceará</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Seu endereço">
+
+            </div>
+            <div class="bg-light rounded box-shadow p-4 mb-3 form-group">
+                <h2 class="h6 text-primary">Forma de Pagamento</h2>
+                <nav class="nav btn-group mt-3" id="formaPagamento" role="tablist">
+                    <button type="button" class="btn btn-secondary btn-sm" id="cartaoCredito" data-toggle="tab"
+                            href="#cartao" role="tab" aria-controls="cartao" aria-selected="true">
+                        Cartão de Crédito
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-sm" id="boletoBancario" data-toggle="tab"
+                            href="#boleto" role="tab" aria-controls="boleto" aria-selected="false">
+                        Boleto Bancário
+                    </button>
+                    <div class="tab-content" id="formaPagamentoContent">
+                        <div class="tab-pane fade show active" id="cartao" role="tabpanel"
+                             aria-labelledby="cartaoCredito">
+
+                            <div class="form-row mt-3">
+                                <div class="form-group col-md-6">
+                                    <label for="numerocartao">Número do Cartão</label>
+                                    <input type="text" class="form-control" id="numerocartao"
+                                           placeholder="Numero do cartão">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="codigoseguranca">Código de Segurança</label>
+                                    <input type="text" class="form-control" id="codigoseguranca"
+                                           placeholder="Digitos de Segurança">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="nomecartao">Nome do Cartão</label>
+                                <input type="text" class="form-control" id="nomecartao" placeholder="Nome do cartão">
+                            </div>
+
+
+                        </div>
+
+                        <div class="tab-pane fade show mt-3" id="boleto" role="tabpanel"
+                             aria-labelledby="boletoBancario">
+                            <p class="lead">Clique em contratar plano para enviarmos um email para você.</p>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="aceitar">
+                <label class="form-check-label" for="aceitar">
+                    Concordo com os termos e <a href="#">condições</a>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar</button>
+        </form>
+
+
+        <div class="col-lg-5 order-first mx-auto mb-5">
+            <h2 class="h6 text-primary text-uppercase">Plano Escolhido</h2>
+            <div id="plano" role="tablist">
+                <div class="bg-light rounded box-shadow">
+                    <nav class="nav btn-group">
+                        <button style="width:50%;" type="button" class="btn btn-info btn-sm" id="planoGold"
+                                data-toggle="tab"
+                                href="#gold" role="tab" aria-controls="gold" aria-selected="true">
+                            Gold
+                        </button>
+                        <button style="width: 50%; background-color: #495057;" type="button"
+                                class="btn btn-primary btn-sm" id="planoPlatinum" data-toggle="tab"
+                                href="#platinum" role="tab" aria-controls="platinum" aria-selected="false">
+                            Platinum
+                        </button>
+                        <div class="tab-content p-4" style="width: 100%;" id="planoContent">
+                            <div class="tab-pane fade show active" id="gold" role="tabpanel"
+                                 aria-labelledby="cartaoCredito">
+                                <h2 class="mt-2">Gold</h2>
+                                <ul class="list-unstyled mt-3">
+                                    <li>→ 1 semana de viagem</li>
+                                    <li>→ Hotel 3 estrelas</li>
+                                    <li>→ 3 destinos diferentes</li>
+                                    <li>→ Entrada para festas</li>
+                                </ul>
+
+                                <div class="form-group pt-2 pb-1">
+                                    <select class="form-control bg-light" id="cidadesG">
+                                        <option selected>Selecione a cidade</option>
+                                        <option>Bruxelas</option>
+                                        <option>Paris</option>
+                                        <option>Amsterdam</option>
+                                    </select>
+                                </div>
+                                <span class="h4">R$ 8.000</span>
+
+                            </div>
+
+                            <div class="tab-pane fade show" id="platinum" role="tabpanel"
+                                 aria-labelledby="planoPlatinum">
+                                <h2 class="mt-2">Platinum</h2>
+                                <ul class="list-unstyled mt-3">
+                                    <li>→ 3 semanas de viagem</li>
+                                    <li>→ Hotel 6 estrelas</li>
+                                    <li>→ 4 destinos diferentes</li>
+                                    <li>→ Entrada para festas</li>
+                                </ul>
+
+                                <div class="form-group pt-2 pb-1">
+                                    <select class="form-control bg-light" id="cidadesP">
+                                        <option selected>Selecione a cidade</option>
+                                        <option>Bruxelas</option>
+                                        <option>Paris</option>
+                                        <option>Amsterdam</option>
+                                    </select>
+                                </div>
+                                <span class="h4">R$ 20.000</span>
+
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<footer class="bg-dark text-white">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4 col-6">
+                <h4 class="h6">Mapa do Site</h4>
+                <ul class="list-unstyled">
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="inscrever.html">Inscrever-se</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-6">
+                <h4 class="h6">Endereço</h4>
+                <ul class="list-unstyled text-secondary">
+                    <li>viamundo@gmail.com</li>
+                    <li>24 hrs</li>
+                    <li>Programação, Brasil</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-12">
+                <h4 class="h6 d-inline-block">Redes Sociais</h4>
+                <ul class="list-unstyled">
+                    <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm">Facebook</a></li>
+                    <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm">Twitter</a></li>
+                    <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center py-3 bg-primary">
+        <p class="mb-0">Viamundo, Todos os Direitos Reservados</p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>

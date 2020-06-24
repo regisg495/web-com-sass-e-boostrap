@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ViaMundo - Galeria</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Fazer Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="login" class="col-form-label">Login:</label>
+                        <input type="text" class="form-control" id="login" placeholder="Seu login"
+                               aria-describedby="loginAjuda">
+                        <small id="loginAjuda" class="form-text text-muted">Nós nunca guardamos seus dados para uso
+                            pessoal.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha" class="col-form-label">Senha:</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Sua senha"
+                               aria-labelledby="esqueceuSenha">
+                        <small id="esqueceuSenha" class="form-text text-muted">
+                            Esqueceu sua senha? Clique <a href="#">aqui</a>
+                        </small>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" href="#" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top box-shadow">
+    <a href="index.html"><img src="img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link active" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="planos.html">Planos</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" data-toggle="modal" href="#" data-target="#modalLogin">Login</a>
+            </li>
+
+            <li class="nav-item mx-1 mr-3">
+                <a class="btn btn-outline-primary ml-md-1" href="inscrever.html">Inscrever-se</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="py-5 galeria" id="galeria">
+    <div class="container">
+        <span class="h6 font-weight-bold text-uppercase d-block text-center pb-1">Conheça seu próximo destino</span>
+        <h2 style="font-size: 2.6rem;" class="display-4 text-primary text-center mb-5 text-uppercase">Galeria de
+            fotos</h2>
+        <div class="row">
+            <div class="col-md">
+                <img class="img-fluid" src="img/fotos/203323.jpg"  alt="Paris">
+                <img class="img-fluid" src="img/fotos/brussels_belgium.jpg" alt="Bruxelas">
+                <img class="img-fluid" src="img/fotos/dicas-de-amsterdam-o-que-fazer-roteiros-restaurantes-hoteis-01.jpg" alt="Amsterdam">
+            </div>
+            <div class="col-md">
+                <img class="img-fluid" src="img/fotos/piramide-louvre-airbnb.png" alt="Paris">
+                <img class="img-fluid" src="img/fotos/erasmus-experience-in-brussels-belgium-683d93268338ea9b5f23c07d04418075.jpg" alt="Bruxelas">
+                <img class="img-fluid" src="img/fotos/river-houses-in-amsterdam-netherlands.jpg"
+                     alt="Amsterdam">
+            </div>
+            <div class="col-md">
+                <img class="img-fluid" src="img/fotos/330316.jpg" alt="Paris">
+                <img class="img-fluid" src="img/fotos/shutterstock-560991079.jpg" alt="Bruxelas">
+                <img class="img-fluid" src="img/fotos/amsterdam-5.jpg"  alt="Amsterdam">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="py-5 galeria">
+    <div class="container">
+        <span class="h6 font-weight-bold text-uppercase d-block text-center pb-1">O que está esperando?</span>
+        <h2 style="font-size: 2.6rem;" class="display-4 text-primary text-center mb-5 text-uppercase">Promoções em Andamento</h2>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+        <th scope="col">Data</th>
+        <th scope="col">Saída</th>
+        <th scope="col">Destino</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Comprar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">5/10/2019</th>
+            <td>São Paulo</td>
+            <td>Bruxelas</td>
+            <td>12 X de R$ 1000.00</td>
+            <td><a href="#" class="btn btn-outline-primary">Comprar</a></td>
+        </tr>
+        <tr>
+            <th scope="row">10/10/2019</th>
+            <td>Porto Alegre</td>
+            <td>Amsterdam</td>
+            <td>12 X de R$ 1200.00</td>
+            <td><a href="#" class="btn btn-outline-primary">Comprar</a></td>
+        </tr>
+        <tr>
+            <th scope="row">13/10/2019</th>
+            <td>Rio de Janeiro</td>
+            <td>Paris</td>
+            <td>12 X de R$ 1500.00</td>
+            <td><a href="#" class="btn btn-outline-primary">Comprar</a></td>
+        </tr>
+        <tr>
+            <th scope="row">18/10/2019</th>
+            <td>Campinas</td>
+            <td>Bruxelas</td>
+            <td>12 X de R$ 1000.00</td>
+            <td><a href="#" class="btn btn-outline-primary">Comprar</a></td>
+        </tr>
+        <tr>
+            <th scope="row">21/10/2019</th>
+            <td>Curitiba</td>
+            <td>Paris</td>
+            <td>12 X de R$ 1600.00</td>
+            <td><a href="#" class="btn btn-outline-primary">Comprar</a></td>
+        </tr>
+        <tr>
+            <th scope="row">22/10/2019</th>
+            <td>Recife</td>
+            <td>Amsterdam</td>
+            <td>12 X de R$ 1300.00</td>
+            <td><a href="#" class="btn btn-outline-primary">Comprar</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    </div>
+</section>
+
+
+<footer class="bg-dark text-white">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4 col-6">
+                <h4 class="h6">Mapa do Site</h4>
+                <ul class="list-unstyled">
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="inscrever.html">Inscrever-se</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-6">
+                <h4 class="h6">Endereço</h4>
+                <ul class="list-unstyled">
+                    <li>viamundo@gmail.com</li>
+                    <li>24 hrs</li>
+                    <li>Programação, Brasil</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-12">
+                <h4 class="h6 d-inline-block">Redes Sociais</h4>
+                <ul class="list-unstyled">
+                    <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm">Facebook</a></li>
+                    <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm">Twitter</a></li>
+                    <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center py-3 bg-primary">
+        <p class="mb-0">Viamundo, Todos os Direitos Reservados</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
